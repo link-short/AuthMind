@@ -1,18 +1,6 @@
 <html>
-  <script>
-    const express = require('express');
-
-    const app = express();
-
-    const clientId = 'Ov23liObZQxFbeXsvUjA';
-    const clientSecret = 'Ov23liObZQxFbeXsvUjA';
-
-    app.get('/', (req, res) => {
-        res.redirect(`https://github.com/login/oauth/authorize?client_id=${clientId}`);
-    });
-
-    app.listen(3000);
-    console.log('App listening on port 3000');
-  </script>
+  <title>AuthMindDest | Home</title>
   <a href="https://github.com/login/oauth/authorize?client_id=Ov23liObZQxFbeXsvUjA&redirect_uri=http://localhost:8080/login/oauth2/code/github">Войти через GitHub</a>
+  <a href="./auth/github?type=github"><img src="./assets/github_logo.png" alt="Login with github" style="width:42px;height:42px;"></a>
+  <!-- https://github.com/login/oauth/authorize?client_id=Ov23liObZQxFbeXsvUjA -->
 </html>
