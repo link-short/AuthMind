@@ -1,17 +1,17 @@
 <?php
 // Проверяем, что параметр 'name' существует в запросе
-if (isset($_GET['name'])) {
-    $name = $_GET['name'];
-    echo "Привет, " . htmlspecialchars($name) . "!"; // Для безопасности используйте htmlspecialchars
+if (isset($_GET['phone'])) {
+    $name = $_GET['phone'];
+    echo "Привет, твой номер " . htmlspecialchars($phone) . "!"; // Для безопасности используйте htmlspecialchars
 }
 
 // Проверяем и получаем параметр 'city'
-if (isset($_GET['city'])) {
-    $city = $_GET['city'];
-    echo "<br>Вы из города " . htmlspecialchars($city) . ".";
+if (isset($_GET['username'])) {
+    $city = $_GET['username'];
+    echo "<br>Ваш username " . htmlspecialchars($username) . ".";
 }
 ?>
-
+<!-- 
 
 
 
@@ -45,4 +45,4 @@ if (isset($_GET['city'])) {
 
     document.getElementById("result").innerHTML = result; 
 
-</script>
+</script> -->
