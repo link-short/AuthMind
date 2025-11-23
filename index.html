@@ -1,0 +1,17 @@
+<html>
+  <script>
+    const express = require('express');
+
+    const app = express();
+
+    const clientId = 'Ov23liObZQxFbeXsvUjA';
+    const clientSecret = 'd531fdf8f9423904975c8eee1976f05225f0c833';
+
+    app.get('/', (req, res) => {
+        res.redirect(`https://github.com/login/oauth/authorize?client_id=${clientId}`);
+    });
+
+    app.listen(3000);
+    console.log('App listening on port 3000');
+  </script>
+</html>
