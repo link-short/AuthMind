@@ -1,3 +1,21 @@
+<?php
+// Проверяем, что параметр 'name' существует в запросе
+if (isset($_GET['name'])) {
+    $name = $_GET['name'];
+    echo "Привет, " . htmlspecialchars($name) . "!"; // Для безопасности используйте htmlspecialchars
+}
+
+// Проверяем и получаем параметр 'city'
+if (isset($_GET['city'])) {
+    $city = $_GET['city'];
+    echo "<br>Вы из города " . htmlspecialchars($city) . ".";
+}
+?>
+
+
+
+
+
 <html href=".././assets/github_logo.png"></html>
 
 
